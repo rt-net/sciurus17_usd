@@ -1,6 +1,8 @@
 # sciurus17_usd
 Isaac Sim向けにセットアップしたSciurus17のUSDファイル用リポジトリです。
 
+![sciurus17\_isaacsim](https://rt-net.github.io/images/sciurus17/sciurus17_isaacsim.png "sciurus17_isaacsim")
+
 ## Table of Contents
 - [sciurus17_usd](#sciurus17_usd)
   - [Requirements](#requirements)
