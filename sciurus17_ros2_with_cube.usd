@@ -7,8 +7,8 @@
                 double radius = 5
             }
             dictionary Perspective = {
-                double3 position = (2.7548825484510613, 2.303432005310328, 2.923310890389827)
-                double3 target = (0.09434071465712446, -0.3571098284836074, 0.26276912009831577)
+                double3 position = (1.5, 1.5, 1.5)
+                double3 target = (0, 0, 0.3)
             }
             dictionary Right = {
                 double3 position = (0, -5, 0)
@@ -18,7 +18,7 @@
                 double3 position = (0, 0, 5)
                 double radius = 5
             }
-            string boundCamera = "/World/sciurus17_ros2/sciurus17/neck_pitch_link/head_camera_link/head_camera_color_frame/head_camera_color_optical_frame/head_camera"
+            string boundCamera = "/OmniverseKit_Persp"
         }
         dictionary omni_layer = {
             string authoring_layer = "./sciurus17_ros2_with_cube.usd"
@@ -294,32 +294,6 @@ def Xform "World"
     }
 }
 
-def Xform "Environment"
-{
-    token visibility = "inherited"
-    quatd xformOp:orient = (1, 0, 0, 0)
-    double3 xformOp:scale = (1, 1, 1)
-    double3 xformOp:translate = (0, 0, 0)
-    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-
-    def DistantLight "defaultLight" (
-        prepend apiSchemas = ["ShapingAPI"]
-    )
-    {
-        float inputs:angle = 1
-        float inputs:intensity = 3000
-        float inputs:shaping:cone:angle = 180
-        float inputs:shaping:cone:softness
-        float inputs:shaping:focus
-        color3f inputs:shaping:focusTint
-        asset inputs:shaping:ies:file
-        quatd xformOp:orient = (0.6532814824381883, 0.2705980500730985, 0.27059805007309845, 0.6532814824381882)
-        double3 xformOp:scale = (1, 1, 1)
-        double3 xformOp:translate = (0, 0, 0)
-        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
-    }
-}
-
 def "Render" (
     hide_in_stage_window = true
     no_delete = true
@@ -338,7 +312,7 @@ def "Render" (
                 no_delete = true
             )
             {
-                rel camera = </World/sciurus17_ros2/sciurus17/neck_pitch_link/head_camera_link/head_camera_color_frame/head_camera_color_optical_frame/head_camera>
+                rel camera = </OmniverseKit_Persp>
                 token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
                 token omni:rtx:background:source:type = "domeLight"
                 bool omni:rtx:dlss:frameGeneration = 0
@@ -437,5 +411,10 @@ def "FlatGrid" (
     prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/Environments/Grid/default_environment.usd@
 )
 {
+    over "SphereLight"
+    {
+        token visibility = "inherited"
+        double3 xformOp:translate = (0.5, 0, 2.5)
+    }
 }
 
