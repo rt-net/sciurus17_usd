@@ -20,7 +20,7 @@ Isaac Sim向けにセットアップしたSciurus17のUSDファイル用リポ�
 - Isaac Sim
     - 5.1.0
 - ROS 2 (Optional)
-  - Jazzy Jalisco
+  - [Jazzy Jalisco](https://docs.ros.org/en/jazzy/Installation.html)
 
 ## Installation
 
