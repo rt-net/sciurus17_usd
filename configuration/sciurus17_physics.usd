@@ -7,8 +7,8 @@
                 double radius = 5
             }
             dictionary Perspective = {
-                double3 position = (5, 5, 5)
-                double3 target = (-3.978038431995401e-8, -3.978038254359717e-8, 7.95607677517296e-8)
+                double3 position = (1.5, 1.5, 1.5)
+                double3 target = (0, 0, 0.3)
             }
             dictionary Right = {
                 double3 position = (0, -5, 0)
@@ -113,7 +113,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -138,7 +138,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -163,7 +163,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -188,7 +188,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -213,7 +213,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -238,7 +238,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -263,7 +263,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -288,7 +288,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -313,7 +313,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -362,7 +362,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -387,7 +387,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -412,7 +412,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -437,7 +437,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "X"
@@ -462,7 +462,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -487,7 +487,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -512,7 +512,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -537,7 +537,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
@@ -562,7 +562,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Y"
@@ -587,7 +587,7 @@ over "sciurus17"
         {
             float drive:angular:physics:damping = 40
             float drive:angular:physics:maxForce = 4
-            float drive:angular:physics:stiffness = 500
+            float drive:angular:physics:stiffness = 10000
             float drive:angular:physics:targetPosition = 0
             uniform token drive:angular:physics:type = "force"
             uniform token physics:axis = "Z"
