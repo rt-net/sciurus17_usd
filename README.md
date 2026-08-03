@@ -30,14 +30,16 @@ git clone https://github.com/rt-net/sciurus17_usd.git
 ```
 
 ### ROS 2 Dependencies Setup (Optional)
+ROS 2と連携させる場合は下記の手順で依存パッケージをインストールします。  
+
 ```bash
 # Create workspace directory
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
 
 # Clone package
-$ git clone -b $ROS_DISTRO https://github.com/rt-net/sciurus17_ros.git
-$ git clone -b $ROS_DISTRO https://github.com/rt-net/sciurus17_description.git
-$ git clone -b 0.3.0 https://github.com/PickNikRobotics/topic_based_ros2_control.git
+git clone -b $ROS_DISTRO https://github.com/rt-net/sciurus17_ros.git
+git clone -b $ROS_DISTRO https://github.com/rt-net/sciurus17_description.git
+git clone -b 0.3.0 https://github.com/PickNikRobotics/topic_based_ros2_control.git
 
 # Install dependencies
 rosdep install -r -y -i --from-paths .
